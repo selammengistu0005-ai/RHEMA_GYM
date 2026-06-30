@@ -818,7 +818,7 @@ p { color: var(--text-muted); }
    ========================================================= */
    
 @media (max-width: 992px) {
-  .hero { padding-top: 9rem; align-items: flex-start; }
+  .hero { padding-top: 9rem; align-items: flex-start; height: auto; min-height: 100vh; overflow: visible; }
   .hero-content { grid-template-columns: 1fr; text-align: center; }
   .hero-actions { justify-content: center; }
   .about-grid,
@@ -837,6 +837,9 @@ p { color: var(--text-muted); }
   .hero {
     padding-top: 9.5rem;
     align-items: flex-start;
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
   }
 
   .nav-links.open {
