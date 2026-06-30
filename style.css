@@ -228,9 +228,7 @@ p { color: var(--text-muted); }
    gradient/keyframe math to keep the glow and dot path precise
    regardless of the card's rem-based outer size.
    ========================================================= */
-/* From Uiverse.io by EmmaxPlay */
-/* From Uiverse.io by EmmaxPlay */
-.card {
+.hero-card .card {
   width: 380px;
   height: 508px;
   margin: 0 auto;
@@ -238,15 +236,15 @@ p { color: var(--text-muted); }
   border-radius: 16px;
   z-index: 1;
 }
-.tools {
+.hero-card .tools {
   display: flex;
   align-items: center;
   padding: 18px;
 }
-.circle {
+.hero-card .circle {
   padding: 0 8px;
 }
-.box {
+.hero-card .box {
   display: inline-block;
   align-items: center;
   width: 20px;
@@ -254,23 +252,23 @@ p { color: var(--text-muted); }
   padding: 2px;
   border-radius: 50%;
 }
-.red {
+.hero-card .red {
   background-color: #ff605c;
 }
-.yellow {
+.hero-card .yellow {
   background-color: #ffbd44;
 }
-.green {
+.hero-card .green {
   background-color: #00ca4e;
 }
 
-.card__content {
+.hero-card .card__content {
   width: 100%;
   height: calc(100% - 50px); /* full height minus the .tools bar */
   overflow: hidden;
   border-radius: 0 0 16px 16px;
 }
-.card__content video {
+.hero-card .card__content video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -355,6 +353,7 @@ p { color: var(--text-muted); }
 .bounceCardsContainer > .card {
   position: absolute;
   width: 12.5rem;
+  height: 12.5rem;
   aspect-ratio: 1;
   border: 0.3125rem solid #fff;
   border-radius: 1.5625rem;
@@ -817,6 +816,7 @@ p { color: var(--text-muted); }
   .pricing-grid,
   .trainers-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
+  .hero-card .card { width: 300px; height: 401px; }
 }
 
 @media (max-width: 768px) {
@@ -844,4 +844,5 @@ p { color: var(--text-muted); }
   .classes-grid { grid-template-columns: 1fr; }
   .bounceCardsContainer { height: 20rem; }
   .bounceCardsContainer .card { width: 8.75rem; }
+  .hero-card .card { width: 240px; height: 320px; }
 }
