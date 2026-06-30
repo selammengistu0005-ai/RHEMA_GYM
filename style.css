@@ -107,6 +107,14 @@ p { color: var(--text-muted); }
   border-bottom: 1px solid var(--border); /* px: hairline border must stay 1 physical pixel */
 }
 
+@media (max-width: 992px) {
+  .site-header {
+    background: transparent;
+    backdrop-filter: none;
+    border-bottom: none;
+  }
+}
+
 .navbar {
   max-width: var(--container-w);
   margin: 0 auto;
